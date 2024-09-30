@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopal Krishan Goyal | Professional Portfolio</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #e3f2fd, #ffffff); /* Light gradient */
+            line-height: 1.6;
+        }
+        header {
+            background-color: #082567; /* Deep navy blue */
+            color: #ffffff;
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile-image {
+            margin-top: 20px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #29b6f6; /* Soft teal */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        header h1 {
+            font-size: 3.2em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        header p {
+            font-size: 1.4em;
+            margin-top: 12px;
+            opacity: 0.85;
+        }
+        nav {
+            margin-top: 25px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 12px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 18px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #29b6f6; /* Teal hover */
+            color: #ffffff;
+        }
+        .container {
+            width: 85%;
+            margin: 50px auto;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .section:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        .section h2 {
+            font-size: 2.3em;
+            margin-bottom: 20px;
+            color: #082567; /* Deep navy blue */
+            border-bottom: 2px solid #fdd835; /* Soft yellow */
+            padding-bottom: 10px;
+        }
+        .section p, .section ul {
+            font-size: 1.15em;
+            color: #666;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+        .card {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .card:hover {
+            background-color: #ffffff;
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .card h3 {
+            color: #29b6f6; /* Soft teal for headings */
+            margin-bottom: 12px;
+        }
+        footer {
+            background-color: #082567;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 10px 0;
+        }
+        footer a {
+            color: #fdd835; /* Accent yellow */
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #29b6f6;
+            text-decoration: underline;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+            header h1 {
+                font-size: 2.4em;
+            }
+            header p {
+                font-size: 1.1em;
+            }
+            .section h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Gopal Krishan Goyal</h1>
+            <p>Computer Science Engineering Student | Problem Solver | Tech Enthusiast</p>
+        </div>
+        <div class="profile-image">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQHo-i1_XKk5bA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727715021572?e=1733356800&v=beta&t=gQV9qT6Tb5v7kzRJdhK1KeXqVfvpd8wHH2DpHcNNrSk" alt="Profile Picture">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>
+                    I am Gopal Krishan Goyal, a third-year Computer Science Engineering student with a strong enthusiasm for technology, innovation, and solving challenging problems. I love diving deep into programming and artificial intelligence, always seeking to learn more and push boundaries in tech. My goal is to apply my knowledge in the real world and contribute to impactful projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="card">
+                <ul>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                    <li>HTML/CSS</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="card">
+                <h3>Cardiovascular Disease Detection (ML & Python)</h3>
+                <p>Developed a Python-based system to detect cardiovascular diseases using machine learning algorithms.</p>
+            </div>
+            <div class="card">
+                <h3>Sentiment Analysis using NLP</h3>
+                <p>Built a sentiment analysis tool using natural language processing to evaluate public opinion on various topics.</p>
+            </div>
+            <div class="card">
+                <h3>Emotion Detection of EEG Signals</h3>
+                <p>Implemented an algorithm to detect emotions from EEG signals using Hilbert and wavelet transformation techniques.</p>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <div class="card">
+                <p>
+                    Pursuing a Bachelor's Degree in Computer Science Engineering with a specialization in AIML from Chandigarh University, expected graduation in 2026.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="card">
+                <p>Email: <a href="mailto:Gopalgoyal770@gmail.com">gopalgoyal770@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/gopal-goyal-240304257/">Gopal Krishan Goyal</a></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gopal Krishan Goyal. All Rights Reserved.</p>
+        <p>Website designed by Gopal Krishan Goyal</p>
+    </footer>
+
+</body>
+</html>
